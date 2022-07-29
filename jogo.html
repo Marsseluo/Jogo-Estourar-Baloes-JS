@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+
+    <script src="javaScript.js"></script>
+    
+</head>
+<body onload="iniciaJogo()">
+    <div style="float:left; width:auto; height:500px; 
+                background:#fff; border:0px solid #a2a2a2; margin-right: 5px;">
+        <table border="0">
+            <tr>
+                <td>
+                    <img src="img/balao_azul_grande.png" alt="">
+                </td>
+
+                <td>
+                   <span id="baloes_inteiros" style="font-size:40px"></span>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="0">
+            <tr>
+                <td>
+                    <img src="img/balao_azul_grande_estourado.png" alt="">
+                </td>
+
+                <td>
+                    <span id="baloes_estourados" style="font-size: 40px;"></span>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table border="0" style="width: 140px; height: 132px;">
+            <tr>
+                <td style="background:url(img/cronometro.png); text-align:center">
+                    <span id="cronometro" style="color:red; font-size:30px; "></span>
+                </td>
+
+            </tr>
+        </table>
+
+        <table border="0" style="width: 140px; height: 132px;">
+            <tr>
+                <td> <button type="button" id="reiniciar" 
+                    style="color:green; border:none; background:rgb(218, 214, 214); font-size: 25px; border-radius: 10px;"> 
+                    <b>Reiniciar</b></button>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div id="cenario" style="float:left; width: 600px; height: 500px; 
+                background:url(img/cenario.png); background-position:bottom;" onclick="estourar"></div>
+</body>
+</html>
